@@ -292,18 +292,24 @@ function calcularImpuestos(valorBase, impIva){
     }
 }
 
+// function obtenerPrecio() {
+//     let valorOutfit = parseFloat(prompt("Ingresa el precio de tu producto"));
+//     if (isNaN(valorOutfit)) {
+//         alert("Por favor, ingresa un número válido.");
+//         obtenerPrecio(); // LLamada recursiva
+//     } else {
+//         calcularImpuestos(valorOutfit, 0.19);
+//     }
+// }
 
+// obtenerPrecio();
 
+function obtenerPrecio() {
+    let valorOutfit;
+    do {
+        valorOutfit = parseFloat(prompt("Ingresa el precio de tu producto"));
+    } while (isNaN(valorOutfit));
+    calcularImpuestos(valorOutfit, 0.19);
+}
 
-
-    function obtenerPrecio() {
-        let valorOutfit = parseFloat(prompt("Ingresa el precio de tu producto"));
-        if (isNaN(valorOutfit)) {
-            alert("Por favor, ingresa un número válido.");
-            obtenerPrecio(); // Llamada recursiva para volver a solicitar el precio
-        } else {
-            calcularImpuestos(valorOutfit, 0.19);
-        }
-    }
-
-    obtenerPrecio();
+obtenerPrecio();
