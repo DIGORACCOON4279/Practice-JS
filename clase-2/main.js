@@ -1,5 +1,5 @@
 
-/*
+
 Numero par e impar
 
 let numero = parseInt(prompt("Ingrese un numero"))//Entre parentesis va el mensaje
@@ -19,7 +19,7 @@ console.log(numero1)
 
 let nota = parseInt(prompt("Ingrese una nota"))
 
-/*
+ley
     < menor
     <= menor o igual
     == igual
@@ -53,7 +53,7 @@ if (numero1 = numero2) {
     console.log("F")
 }
 
-/*
+
     = asignacion
     == analizo el VALOR de las variables                igual
     === analizo el VALOR y el tipo de las variables     estricticamente igual
@@ -87,7 +87,7 @@ if (nota >= 1 && nota <= 10) {
 
 
 /*
-    Operador AND (Operador Si)    
+    Operador AND (Operador Si)
     p     &&    q
     V     V     V
     V     F     F
@@ -102,3 +102,13 @@ if (nota >= 1 && nota <= 10) {
     F     F     F
 
 */
+let numero1 = 3;
+let numero2 = 7;
+
+if (numero1 != numero2) {
+        console.log("V");
+    } else {
+        console.log("F");
+}
+
+

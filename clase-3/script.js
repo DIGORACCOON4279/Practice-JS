@@ -1,7 +1,7 @@
-/*let fin = parseInt(prompt("Ingrese un numero para ver todos los pares hasta ese numero"))
+let fin = parseInt(prompt("Ingrese un numero para ver todos los pares hasta ese numero"))
 
 
-/*
+
 Si mi inicio nunca llega a mi fin, genero un ciclo infinito
 for (let i = 0; i <= fin; i = i - 2) { Si ingreso 2, el ciclo hace 0, -2, -4, -6 y nunca a llega a 2
     console.log(i)
@@ -11,8 +11,7 @@ for (let i = 1; i <= fin; i = i + 2) { //Las variables suelen ser i, j o k
     console.log(i)
 }
 
-/*
-    i       i<=5     i = i +1
+    i       i <= 5     i = i + 1
     1       V           2
     2       V           3
     3       V           4
