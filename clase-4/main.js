@@ -294,3 +294,14 @@ function calcularImpuestos(valorBase, impIva){
 
 let valorOutfit = (parseFloat(prompt("Ingresa el precio de tu producto")));
 let costoTotal = calcularImpuestos(valorOutfit, 0.19);
+
+
+function obtenerPrecioProducto() {
+    let valorOutfit;
+    do {
+        valorOutfit = parseFloat(prompt("Ingresa el precio de tu producto"));
+    } while (isNaN(valorOutfit)); // Continúa solicitando un número hasta que se ingrese uno válido
+    calcularImpuestos(valorOutfit, 0.19);
+}
+
+obtenerPrecioProducto();
