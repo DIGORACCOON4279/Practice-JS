@@ -111,4 +111,6 @@ switch(operador) {
     case "*":
         alert("El resultado de la multiplicacion es: " + (numeroUno * numeroDos));
         break
+    default:
+        alert("Ingresa una operacion valida")
 }
