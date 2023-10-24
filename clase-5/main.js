@@ -45,49 +45,83 @@ console.log(producto1)
 
 */
 
-class Animal {
-    constructor(nombre, nombreCientifico, habitat) {
-        this.nombre = nombre
-        this.nombreCientifico = nombreCientifico
-        this.habitat = habitat
-    }
+// class Animal {
+//     constructor(nombre, nombreCientifico, habitat) {
+//         this.nombre = nombre
+//         this.nombreCientifico = nombreCientifico
+//         this.habitat = habitat
+//     }
 
-    duerme() {
-        console.log("Estoy durmiendo")
-    }
+//     duerme() {
+//         console.log("Estoy durmiendo")
+//     }
 
-    comiendo() {
-        console.log("Estoy comiendo")
-    }
-}
+//     comiendo() {
+//         console.log("Estoy comiendo")
+//     }
+// }
 
-class Mamifero extends Animal { //Mamifero va a ser una extension de la clase Animal (La clase Animal es la clase Padre de la clase Mamifero)
-    constructor(colorPelaje, nombre, nombreCientifico, habitat) {
-        super(nombre, nombreCientifico, habitat) //super es superclass y es llamar a la clase padre
-        this.colorPelaje = colorPelaje
-    }
+// class Mamifero extends Animal { //Mamifero va a ser una extension de la clase Animal (La clase Animal es la clase Padre de la clase Mamifero)
+//     constructor(colorPelaje, nombre, nombreCientifico, habitat) {
+//         super(nombre, nombreCientifico, habitat) //super es superclass y es llamar a la clase padre
+//         this.colorPelaje = colorPelaje
+//     }
 
-    amamantar() {
-        console.log("Estoy amamantando")
-    }
-}
+//     amamantar() {
+//         console.log("Estoy amamantando")
+//     }
+// }
 
-class Reptil extends Animal {
-    constructor(esVenonoso, nombre, nombreCientifico, habitat) {
-        super(nombre, nombreCientifico, habitat)
-        this.esVenonoso = esVenonoso
+// class Reptil extends Animal {
+//     constructor(esVenonoso, nombre, nombreCientifico, habitat) {
+//         super(nombre, nombreCientifico, habitat)
+//         this.esVenonoso = esVenonoso
 
-    }
+//     }
 
-    ponerHuevos() {
-        console.log("Pongo huevos")
-    }
-}
+//     ponerHuevos() {
+//         console.log("Pongo huevos")
+//     }
+// }
 
-const mamifero1 = new Mamifero("Marron", "Lobo", "Lobitus", "Bosque")
-const reptil1 = new Reptil("No", "Cocodrilo", "Cocitus", "Pantano")
+// const mamifero1 = new Mamifero("Marron", "Lobo", "Lobitus", "Bosque")
+// const reptil1 = new Reptil("No", "Cocodrilo", "Cocitus", "Pantano")
 
-reptil1.duerme()
-mamifero1.comiendo()
-console.log(mamifero1)
-console.log(reptil1)
+// reptil1.duerme()
+// mamifero1.comiendo()
+// console.log(mamifero1)
+// console.log(reptil1)
+
+
+// const alumno = {
+//     nombre: "Pepe",
+//     apellido: "Perez",
+//     email: "pepe@pepe.com",
+//     password: "pepe123",
+//     dni: 123123
+// }
+
+// alumno.apellido = "Martinez"
+// console.log(alumno.apellido.toLowerCase())
+// parseFloat()
+//alumno = null
+
+//Los objetos en JS se crean con constantes
+
+// Go over
+
+// const alumno = {
+//     nombre: "Diego",
+//     apellido: "Marin",
+//     nickName: "Raccoon",
+//     email: "diego@mail.com",
+//     password: "diego123",
+//     id: "71791631",
+// }
+
+// console.log((alumno.nombre), (alumno.apellido), (alumno.email), (alumno.password), (alumno.id));
+// alert("Tu nombre es " + (alumno.nombre) + " " + (alumno.apellido));
+// alumno.nombre = "Exxo";
+// console.log((alumno.nombre.toUpperCase()), (alumno.apellido), (alumno.email), (alumno.password), (alumno.id));
+// alert("Mi nuevo nombre es " + (alumno.nombre) + " " + (alumno.apellido));
+// alert("Mi nuevo id es: " + (alumno.id));
