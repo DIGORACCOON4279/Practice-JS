@@ -94,23 +94,44 @@
 // }
 
 
-let numeroUno = parseFloat(prompt("Ingresa el primer numero"));
-let operador = (prompt("Ingresa un operador: (+, -, *, /)"));
-let numeroDos = parseFloat(prompt("Ingresa el segundo numero"))
+// let numeroUno = parseFloat(prompt("Ingresa el primer numero"));
+// let operador = (prompt("Ingresa un operador: (+, -, *, /)"));
+// let numeroDos = parseFloat(prompt("Ingresa el segundo numero"))
 
-switch(operador) {
+// switch(operador) {
+//     case "+":
+//         alert("El resultado de la suma es: " + (numeroUno + numeroDos));
+//         break
+//     case "-":
+//         alert("El resultado de la resta es: " + (numeroUno - numeroDos));
+//         break
+//     case "/":
+//         alert("El resultado de la division es: " + (numeroUno / numeroDos));
+//         break
+//     case "*":
+//         alert("El resultado de la multiplicacion es: " + (numeroUno * numeroDos));
+//         break
+//     default:
+//         alert("Ingresa una operacion valida")
+// }
+
+let  numberOne = parseFloat(prompt("Ingrese el primer numero"));
+let  operator = (prompt("Que operacion quieres realizar: (+, -, *, /)"));
+let  numberTwo = parseFloat(prompt("Ingrese el segundo numero"));
+
+switch(operator){
     case "+":
-        alert("El resultado de la suma es: " + (numeroUno + numeroDos));
+        alert("El resultado de la suma es: " + (numberOne + numberTwo));
         break
     case "-":
-        alert("El resultado de la resta es: " + (numeroUno - numeroDos));
-        break
-    case "/":
-        alert("El resultado de la division es: " + (numeroUno / numeroDos));
+        alert("El resultado de la resta es: " + (numberOne - numberTwo));
         break
     case "*":
-        alert("El resultado de la multiplicacion es: " + (numeroUno * numeroDos));
+        alert("El resultado de la multiplicacion es: " + (numberOne * numberTwo));
+        break
+    case "/":
+        alert("El resultado de la division es: " + (numberOne / numberTwo));
         break
     default:
-        alert("Ingresa una operacion valida")
+        alert("Ingresa una operacion valida");
 }
