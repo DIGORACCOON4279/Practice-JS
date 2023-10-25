@@ -240,22 +240,42 @@
 // producto5.aumentarPrecio(2.0);
 // console.log(producto5);
 
-/*************************************  Break a Leg *****************************************************/
+/***************************************************  Break a Leg *****************************************************/
 
-class Products {
-    constructor(code, name, category, price, stock) {
-        this.code = code;
+
+
+class Outfit {
+    constructor(name, price, inStock, newArrivals, soldOut) {
         this.name = name;
-        this.category = category;
         this.price = price;
-        this.stock = stock;
+        this.inStock = inStock;
+        this.newArrivals = newArrivals;
+        this.soldOut = soldOut;
     }
 
-    availabityProduct(inStock, newArrivals, soldOut) {
-
+    mostrarInformacion() {
+        alert(`Item: ${this.name},
+            Price: ${this.price},
+            In Stock: ${this.inStock},
+            New Arrivals: ${this.newArrivals ? 'Si' : 'No'},
+            Sold-out: ${this.soldOut ? 'Sí' : 'No'}`
+        );
     }
-
-
-
-
 }
+
+  // Crear instancias de Outfit
+const outfit1 = new Outfit("Outfit 1", 499, 10, false, false);
+const outfit2 = new Outfit("Outfit 2", 599, 5, true, false);
+const outfit3 = new Outfit("Outfit 3", 999, 0, false, true);
+const outfit4 = new Outfit("Outfit 4", 599, 5, true, false);
+const outfit5 = new Outfit("Outfit 5", 999, 0, false, true);
+
+  // Mostrar la información de los outfits
+outfit1.mostrarInformacion();
+outfit2.mostrarInformacion();
+outfit3.mostrarInformacion();
+outfit4.mostrarInformacion();
+outfit5.mostrarInformacion();
+console.log(outfit1);
+console.log(outfit2);
+console.log(outfit3);
